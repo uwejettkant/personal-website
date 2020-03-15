@@ -1,78 +1,145 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Website Uwe Jettkant</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <title>Uwe Jettkant Website</title>
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__h1">Uwe Jettkant</h1>
-            <nav class="header__nav">
-                <a class="header__a"href="">Kontakt</a>
-                <a class="header__a" href="">Biografie</a>
-            </nav>
-    </header>
-    <section class="image-section">
-        <p class="image-section__p">Ich bin ein Webentwickler mit logistischem Background</p>
-    </section>
-    <section class="skill-section">
-        <h2 class="skill-section__h2">Skills</h2>
-        <ul class="skill-section__ul">
-            <li class="skill-section__li">HTML</li>
-            <li class="skill-section__li">CSS</li>
-            <li class="skill-section__li">JAVASKRIPT</>
-        </ul>
-        <h2 class="skill-section__h2">MORE SKILLS</h2>
-            <ul>
-                <li class="skill-section__li">Kreativ</li>
-                <li class="skill-section__li"></li>Ergebisorientiert</li>
-                <li class="skill-section__li"></li>Technikbegeistert</li>
+    <header>
+        <div class="logo">
+            <img src="img/devjane.png" alt="">
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
             </ul>
+        </nav>
+    </header>
+    
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hallo, ich bin <strong>Uwe Jettkant</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">front-end developer</p>
+        <img src="images/profile2.jpg" alt="a picture of Uwe Jettkant" class="intro__img">
     </section>
-    <section class="contact-section">
-        <h2>Kontakt</h2>
-        <p>Mobil Nr:</p>
-        <p>01732404622</p>
-        <p>Email</p>
-        <p>ujettkant@gmail.com</p>
+    
+    
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">Was ich mache</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Landingpages</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div> <!-- / service -->
+            
+            <div class="service">
+                <h3>Websites</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div> <!-- / service -->
+            
+            <div class="service">
+                <h3>Apps</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div> <!-- / service -->
+        </div> <!-- / services -->
+        
+        <a href="#work" class="btn">Mein Portfolio</a>
     </section>
-    <section class="card-section">
-        <div class="card-section__div">
-            <img class="card-section__div--img" src="images/github.png" alt="github logo">
-            <p>Hier geht´s zu meinem Guthub Profil</p>
+    
+    
+    <!-- About me -->
+    <section class="about-me" id="about">
+       <h2 class="section__title section__title--about">Wer ich bin</h2>
+       <p class="section__subtitle section__subtitle--about"></p>
+       
+       <div class="about-me__body">
+           <p></p>
+           <p></p>
+       </div>
+       
+       <img src="img/dev-jane-02.jpg" alt="Jane leaning against a bus">
+    </section>
+    
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title">Mein Portfolio</h2>
+        <p class="section__subtitle"></p>
+        
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 02 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 03 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 04 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 05 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 06 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 07 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 08 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 09 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 0 0-->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
+            </a>
         </div>
-        <div class="card-section__div">
-            <img class="card-section__div--img" src="images/code.jpg" alt="Image of a Laptop with code">
-            <p>Hier geht´s zu meinem Codepen Profil</p>
-        </div>
-        <div class="card-section__div">
-            <img class="card-section__div--img" src="images/linkedin.png" alt="linkedin logo">
-            <p>Hier geht´s zu meinem linkedin Profil</p>
-        </div>
     </section>
-    <section class="me-section">
-        <h3>Über Mich</h3>
-        <p>Ich bin an der Ostsee groß geworden, bis es mich vor ca. 15 Jahren nach Hamburg gezogen hat. Dem Wasser bin ich in der Hansestadt ja treu geblieben.</p>
-        <p>Lange Zeit war ich in der Welt von Containern und Schiffen zu Hause. Mit dieser logistischen Erfahrung habe ich mich auf die digitale Welt spezialisiert und bin nun Ihr Ansprechpartner für Projeklte in der Webentwicklung.</p>
-        <p>Meine Neugier und die Fähigkeit die richtigen Fragen zu stellen gewährleistet das entwickeln qualittiv hochwertiger Software Produkte.Mein Prortfolio könnt Ihr Euch gerne auf meinen Github Account annsehen.</p>
-    </section>
-    <section class="bio-section">
-        <h3>Biogrfie</h3>
-        <ul class="bio-section__ul">
-            <li class="bio-section__li">Geburtsdatum: 22.01.1982</li>
-            <li class="bio-section__li">Geburtsort: Kühlungsborn</li>
-            <li class="bio-section__li">1988 - 2002: Abitur</li>
-            <li class="bio-section__li">2002 - 2006: Bundeswehr</li>
-            <li class="bio-section__li">2006 - 2008: Studium Medizintechnik (abgebrochen)</li>
-            <li class="bio-section__li">2008 - 2010: Ausbildung - Kaufmann Logistikdienstleistung</li>
-            <li class="bio-section__li">2010 - 2019: Logistik</li>
-            <li class="bio-section__li">2020: Web-Entwickler</li>
+    
+    
+    <!-- Footer -->
+    <footer>
+        <!-- replace with your own email address -->
+        <a href="mailto:hello@jane.dev" class="footer__link">hello@jane.dev</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">a</a></li>
+            <li class="social-list__item">b<a class="social-list__link" href="http://dribbble.com"></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://twitter.com">c</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com">d</a></li>
         </ul>
-    </section>
-    <footer class="footer">
-        <p>copyright</p>
     </footer>
+    
+    
 </body>
 </html>
