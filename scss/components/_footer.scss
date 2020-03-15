@@ -1,10 +1,11 @@
-.footer {
-    background: #111;
-    color: var(--clr-accent);
+footer {
+    background: #fff;
+    color: var(--clr-dark);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
 }
+
 
 .footer a { 
     color: inherit;
@@ -38,4 +39,8 @@
 
 .social-list__link {
     padding: .5em;
+}
+
+.fab { 
+    font-size: var(--fs-h2);   
 }
