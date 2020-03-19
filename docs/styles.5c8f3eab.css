@@ -5,7 +5,7 @@
   --fw-bold: 900;
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: #e6e1e3;
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -328,6 +328,7 @@ footer {
 
 .footer__link {
   font-weight: var(--fw-bold);
+  color: #000;
 }
 
 .footer__link:hover,
@@ -353,6 +354,7 @@ footer {
 
 .social-list__link {
   padding: 0.5em;
+  color: #000;
 }
 
 .fab {
