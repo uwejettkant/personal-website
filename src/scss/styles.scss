@@ -1,15 +1,12 @@
-@import "variables";
-@import "base";
-@import "utils";
-@import "components/header";
-@import "components/intro";
-@import "components/services";
-@import "components/about-me";
-@import "components/portfolio";
-@import "components/footer";
-
-
-
+@import 'variables';
+@import 'base';
+@import 'utils';
+@import 'components/header';
+@import 'components/intro';
+@import 'components/services';
+@import 'components/about-me';
+@import 'components/portfolio';
+@import 'components/footer';
 
 //components - klassen + Dateien für einzelne Componenten z.B.
 
@@ -17,5 +14,3 @@
 //@import "usercard";
 
 //etc.
-
-
