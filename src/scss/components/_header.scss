@@ -1,23 +1,21 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
 .nav__list {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .nav__item {
-    padding-right: 1em;
-    list-style: none;
+  padding-right: 1em;
+  list-style: none;
 }
 
 .nav__link {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }

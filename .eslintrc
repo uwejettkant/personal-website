@@ -1,14 +1,15 @@
+
 {
     "extends": ["eslint:recommended", "plugin:prettier/recommended"],
     "parserOptions": {
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
     },
     "env": {
-        "browser": true,
-        "es2020": true
+      "browser": true,
+      "es2020": true
     },
     "plugins": ["prettier"]
-}
+  }
