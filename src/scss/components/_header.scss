@@ -1,6 +1,6 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -8,6 +8,7 @@ header {
   display: flex;
   justify-content: end;
   align-items: center;
+  padding: 0;
 }
 
 .nav__item {
@@ -18,4 +19,10 @@ header {
 .nav__link {
   text-decoration: none;
   color: #000;
+}
+
+@media (min-width: 685px) {
+  header {
+    justify-content: end;
+  }
 }

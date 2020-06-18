@@ -138,7 +138,7 @@ h3 {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -146,6 +146,7 @@ header {
   display: flex;
   justify-content: end;
   align-items: center;
+  padding: 0;
 }
 
 .nav__item {
@@ -158,6 +159,11 @@ header {
   color: #000;
 }
 
+@media (min-width: 685px) {
+  header {
+    justify-content: end;
+  }
+}
 .intro {
   position: relative;
 }
@@ -317,6 +323,19 @@ header {
   opacity: 0.5;
 }
 
+/* Individual portfolio item styles */
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer {
   background: #fff;
   color: var(--clr-dark);
@@ -361,7 +380,8 @@ footer {
   margin: 0 0.5em;
 }
 
-.fab {
+.fab,
+.fa-xing-square {
   font-size: var(--fs-h2);
 }
 
