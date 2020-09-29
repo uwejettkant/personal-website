@@ -6,7 +6,7 @@ header {
 
 .nav__list {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   padding: 0;
 }
@@ -24,5 +24,6 @@ header {
 @media (min-width: 685px) {
   header {
     justify-content: end;
+    padding-left: 1em;
   }
 }
