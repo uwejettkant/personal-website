@@ -1,5 +1,5 @@
 footer {
-  background: #fff;
+  background: var(--clr-light);
   color: var(--clr-dark);
   text-align: center;
   padding: 2.5em 0;
@@ -14,6 +14,11 @@ footer {
 .footer__link {
   font-weight: var(--fw-bold);
   color: #000;
+}
+
+.footer-import-app {
+  background: #e3e4e6;
+  color: #194cda;
 }
 
 .social-list__link {
@@ -42,6 +47,7 @@ footer {
   margin: 0 0.5em;
 }
 
-.fab {
+.fab,
+.fa-xing-square {
   font-size: var(--fs-h2);
 }
