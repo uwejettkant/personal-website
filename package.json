@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.0.1",
-  "description": "",
+  "description": "portfolio website for webdevelopment",
   "main": "index.html",
   "scripts": {
     "start": "parcel src/index.html",
