@@ -43,7 +43,7 @@
 }
 
 .portfolio-item__subtitle {
-  background: #e3e4e6;
+  background: var(--clr-import);
 }
 
 .portfolio-item-individual {
@@ -80,7 +80,7 @@
 
 .fa-check-square {
   font-size: 0.9rem;
-  color: #194cda;
+  color: var(--clr-import-blue);
 }
 
 .portfolio-item__list {

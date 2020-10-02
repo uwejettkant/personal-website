@@ -6,6 +6,8 @@
   --clr-light: #fff;
   --clr-dark: #303030;
   --clr-accent: #e6e1e3;
+  --clr-import: #e3e4e6;
+  --clr-import-blue: #194cda;
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -445,7 +447,7 @@ header {
 }
 
 .portfolio-item__subtitle {
-  background: #e3e4e6;
+  background: var(--clr-import);
 }
 
 .portfolio-item-individual {
@@ -481,7 +483,7 @@ header {
 
 .fa-check-square {
   font-size: 0.9rem;
-  color: #194cda;
+  color: var(--clr-import-blue);
 }
 
 .portfolio-item__list {
@@ -569,8 +571,8 @@ footer {
 }
 
 .footer-import-app {
-  background: #e3e4e6;
-  color: #194cda;
+  background: var(--clr-import);
+  color: var(--clr-import-blue);
 }
 
 .social-list__link {
