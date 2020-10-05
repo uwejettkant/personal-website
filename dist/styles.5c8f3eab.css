@@ -146,6 +146,12 @@ header {
 
 .logo {
   max-width: 100px;
+  height: 40px;
+}
+
+.logo__header {
+  object-fit: cover;
+  height: 40px;
 }
 
 .nav {
@@ -188,11 +194,10 @@ header {
   background: transparent;
   border: 0;
   cursor: pointer;
-  position: absolute;
   right: 1em;
   top: 1em;
   z-index: 1000;
-  margin-top: 0.5em;
+  align-self: center;
 }
 
 .hamburger {
@@ -238,7 +243,7 @@ header {
 .nav-open .hamburger {
   transform: rotate(0.625turn);
   background: var(--clr-light);
-  margin-top: 0.5em;
+  margin-top: 1.25em;
 }
 
 .nav-open .hamburger::before {
@@ -252,12 +257,11 @@ header {
 
 @media (min-width: 600px) {
   .nav {
-    position: relative;
+    position: inherit;
     background: var(--clr-light);
     color: var(--clr-dark);
-    z-index: 100;
     transform: translateX(0%);
-    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+    transition: transform 0ms;
   }
 
   .nav__list {
@@ -270,7 +274,6 @@ header {
 
   .nav__item {
     padding-right: 1em;
-    list-style: none;
   }
 
   .nav__link {
@@ -362,8 +365,22 @@ header {
     margin-right: auto;
   }
 
+  .service {
+    width: 250px;
+  }
+
   .service + .service {
     margin-left: 2em;
+  }
+}
+@media (min-width: 900px) {
+  .service {
+    width: 280px;
+  }
+}
+@media (min-width: 1000px) {
+  .service {
+    max-width: 310px;
   }
 }
 .about-me {
