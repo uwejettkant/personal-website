@@ -22,17 +22,40 @@ footer {
   color: var(--clr-import-blue);
 }
 
+.footer__import-name {
+  color: var(--clr-import-blue);
+}
+
 .social-list__link {
   padding: 0.5em;
   color: #000;
 }
 
+.footer__imprint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: '';
+    border-top: 1px solid var(--clr-dark);
+    width: 250px;
+    display: inline-block;
+    margin-bottom: 2.5em;
+    opacity: 0.25;
+  }
+}
+
 .footer__link:hover,
-.social-list__link:hover {
+.social-list__link:hover,
+.footer__imprint:hover,
+.foter__data-protection:hover {
   opacity: 0.7;
 }
 
-.footer__link:hover {
+.footer__link:hover,
+.footer__imprint:hover,
+.footer__data-protection:hover {
   text-decoration: underline;
 }
 
@@ -51,19 +74,4 @@ footer {
 .fab,
 .fa-xing-square {
   font-size: var(--fs-h2);
-}
-
-.footer__imprint {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &::before {
-    content: '';
-    border-top: 1px solid var(--clr-dark);
-    width: 250px;
-    display: inline-block;
-    margin-bottom: 2.5em;
-    opacity: 0.25;
-  }
 }
