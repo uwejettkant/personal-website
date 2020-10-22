@@ -678,5 +678,36 @@ footer {
     grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(20px, 370px)) minmax(1em, 1fr);
   }
 }
+.data-protection > * {
+  grid-column: 2/-2;
+}
+
+.data-protection {
+  padding: 6em 2em 3em 2em;
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
+  grid-gap: 1em;
+}
+.data-protection h2 {
+  margin-top: 1em;
+  font-size: 1.25rem;
+}
+.data-protection h3 {
+  margin-top: 1em;
+}
+.data-protection p {
+  margin: 0.5em 0 0.5em 0;
+}
+.data-protection h2,
+.data-protection h3,
+.data-protection p {
+  min-height: 0;
+}
+
+@media (min-width: 768px) {
+  .data-protection {
+    grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(20px, 370px)) minmax(1em, 1fr);
+  }
+}
 
 /*# sourceMappingURL=/styles.5c8f3eab.css.map */
