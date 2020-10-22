@@ -583,7 +583,8 @@ footer {
   text-decoration: none;
 }
 
-.footer__link {
+.footer__link,
+.footer__name {
   font-weight: var(--fw-bold);
   color: #000;
 }
@@ -612,7 +613,7 @@ footer {
   display: flex;
   justify-content: center;
   margin: 2em 0 0;
-  padding: 0;
+  padding: 0 0 2em 0;
 }
 
 .social-list__item {
@@ -622,6 +623,20 @@ footer {
 .fab,
 .fa-xing-square {
   font-size: var(--fs-h2);
+}
+
+.footer__imprint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__imprint::before {
+  content: "";
+  border-top: 1px solid var(--clr-dark);
+  width: 250px;
+  display: inline-block;
+  margin-bottom: 2.5em;
+  opacity: 0.25;
 }
 
 /*# sourceMappingURL=/styles.5c8f3eab.css.map */
