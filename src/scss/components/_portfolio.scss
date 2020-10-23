@@ -19,7 +19,6 @@
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
-  object-fit: cover;
 }
 
 .portfolio__img {
@@ -98,7 +97,6 @@
 @media (max-width: 360px) {
   .portfolio {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -137,6 +135,18 @@
 
   .portfolio-item__list {
     transform: translateX(-2.75%);
+  }
+}
+
+@media (min-width: 660px) {
+  .portfolio__item {
+    height: 250px;
+  }
+
+  .portfolio__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
