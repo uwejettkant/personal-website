@@ -3,7 +3,7 @@
 }
 
 .intro__img {
-  box-shadow: var(--boxshadow);
+  box-shadow: var(--box-shadow);
 }
 
 .section__subtitle--intro {
@@ -17,8 +17,8 @@
     margin: 0 auto;
     grid-column-gap: 1em;
     grid-template-areas:
-      "img title"
-      "img subtitle";
+      'img title'
+      'img subtitle';
     grid-template-columns: min-content max-content;
   }
 
@@ -37,5 +37,6 @@
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
+    transform: translateY(-150%);
   }
 }

@@ -12,7 +12,8 @@
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
-  --box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+  --box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 800px) {
@@ -290,7 +291,7 @@ header {
 }
 
 .intro__img {
-  box-shadow: var(--boxshadow);
+  box-shadow: var(--box-shadow);
 }
 
 .section__subtitle--intro {
@@ -322,6 +323,7 @@ header {
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
+    transform: translateY(-150%);
   }
 }
 .my-services {
@@ -472,6 +474,9 @@ header {
   max-width: 1000px;
   margin: 0 auto;
 }
+.portfolio-item-individual img {
+  width: 100%;
+}
 
 .portfolio-item-individual p {
   max-width: 1000px;
@@ -489,6 +494,8 @@ header {
 
 .portfolio-item__image {
   margin-bottom: 2em;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
 }
 .portfolio-item__image:last-child {
   margin-bottom: 0;
@@ -514,6 +521,21 @@ header {
   font-weight: 900;
 }
 
+.portfolio-intro__image--easyimp {
+  box-shadow: 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  border-radius: 45px;
+}
+
+.intro__image-guestcheck {
+  box-shadow: 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.portfolio-item-individual__image {
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+
 @media (max-width: 360px) {
   .portfolio {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -522,6 +544,10 @@ header {
 
   .portfolio-item__list {
     transform: translateX(-6%);
+  }
+
+  .portfolio-intro__image--easyimp {
+    border-radius: 30px;
   }
 }
 @media (min-width: 361px) {
@@ -532,6 +558,10 @@ header {
 @media (min-width: 450px) {
   .portfolio-item__list {
     transform: translateX(-3%);
+  }
+
+  .portfolio-intro__image--easyimp {
+    border-radius: 55px;
   }
 }
 @media (min-width: 600px) {
@@ -551,6 +581,10 @@ header {
 
   .portfolio-item__list {
     transform: translateX(-2.75%);
+  }
+
+  .portfolio-intro__image--easyimp {
+    border-radius: 35px;
   }
 }
 @media (min-width: 660px) {
@@ -607,6 +641,15 @@ footer {
   color: var(--clr-import-blue);
 }
 
+.footer__guestcheck {
+  background: var(--clr-dark);
+  color: var(--clr-accent);
+}
+
+.footer__guestcheck-name {
+  color: var(--clr-accent);
+}
+
 .social-list__link {
   padding: 0.5em;
   color: #000;
@@ -624,6 +667,10 @@ footer {
   display: inline-block;
   margin-bottom: 2.5em;
   opacity: 0.25;
+}
+
+.footer__imprint-geustcheck::before {
+  border-top: 1px solid var(--clr-accent);
 }
 
 .footer__link:hover,
