@@ -10,6 +10,17 @@
   display: inline-block;
 }
 
+.section__subtitle--guestcheck {
+  background-image:
+    linear-gradient(
+      to right,
+      #f3e7e9,
+      #f3e7e9,
+      #e3eeff,
+      #e3eeff
+    );
+}
+
 @media (min-width: 600px) {
   .intro {
     display: grid;
@@ -37,6 +48,14 @@
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
-    transform: translateY(-150%);
+    transform: translateY(-160%);
+  }
+
+  .section__subtitle--import {
+    transform: translateY(-295%);
+  }
+
+  .section__subtitle--guestcheck {
+    transform: translateY(-225%);
   }
 }
