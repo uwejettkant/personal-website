@@ -48,6 +48,20 @@
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
+    transform: translateY(-245%);
+  }
+
+  .section__subtitle--import {
+    transform: translateY(-415%);
+  }
+
+  .section__subtitle--guestcheck {
+    transform: translateY(-325%);
+  }
+}
+
+@media (min-width: 800px) {
+  .section__subtitle--intro {
     transform: translateY(-160%);
   }
 
