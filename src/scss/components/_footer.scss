@@ -26,6 +26,15 @@ footer {
   color: var(--clr-import-blue);
 }
 
+.footer__guestcheck {
+  background: var(--clr-dark);
+  color: var(--clr-accent);
+}
+
+.footer__guestcheck-name {
+  color: var(--clr-accent);
+}
+
 .social-list__link {
   padding: 0.5em;
   color: #000;
@@ -43,6 +52,12 @@ footer {
     display: inline-block;
     margin-bottom: 2.5em;
     opacity: 0.25;
+  }
+}
+
+.footer__imprint-geustcheck {
+  &::before {
+    border-top: 1px solid var(--clr-accent);
   }
 }
 
