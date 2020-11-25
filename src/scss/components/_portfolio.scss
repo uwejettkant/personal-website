@@ -14,6 +14,10 @@
   background: var(--clr-dark);
 }
 
+.section__subtitle--humbee {
+  background: var(--clr-humbee);
+}
+
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -102,6 +106,10 @@
   color: var(--clr-wik);
 }
 
+.fa-check-humbee {
+  color: var(--clr-humbee-dark);
+}
+
 .portfolio-item__list {
   list-style: none;
   transform: translateX(-2%);
@@ -136,8 +144,13 @@
   color: var(--clr-wik);
 }
 
+.humbee-link {
+  color: var(--clr-humbee-dark);
+}
+
 .guestcheck-link,
-.wik-link {
+.wik-link,
+.humbee-link {
   text-decoration: none;
 
   &:hover {
@@ -146,7 +159,8 @@
   }
 
   .guestcheck-link__title,
-  .wik-link {
+  .wik-link__title,
+  .humbee-link__title {
     margin-bottom: 2em;
   }
 }
