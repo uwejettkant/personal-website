@@ -18,6 +18,10 @@
   background: var(--clr-humbee);
 }
 
+.section__subtitle--kleinstadtleben {
+  background: var(--clr-kleinstadtleben);
+}
+
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -110,6 +114,10 @@
   color: var(--clr-humbee-dark);
 }
 
+.fa-check-kleinstadtleben {
+  color: var(--clr-kleinstadtleben-dark);
+}
+
 .portfolio-item__list {
   list-style: none;
   transform: translateX(-2%);
@@ -148,9 +156,14 @@
   color: var(--clr-humbee-dark);
 }
 
+.kleinstadtleben-link {
+  color: var(--clr-kleinstadtleben-dark);
+}
+
 .guestcheck-link,
 .wik-link,
-.humbee-link {
+.humbee-link,
+.kleinstadtleben-link {
   text-decoration: none;
 
   &:hover {
@@ -160,7 +173,8 @@
 
   .guestcheck-link__title,
   .wik-link__title,
-  .humbee-link__title {
+  .humbee-link__title,
+  .kleinstadtleben-link {
     margin-bottom: 2em;
   }
 }
