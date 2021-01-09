@@ -1,0 +1,45 @@
+.trust-seals {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 4em;
+}
+
+.seal-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  margin-top: 3em;
+}
+
+.seal__title,
+.seal__subtitle {
+  margin: 0.5em auto;
+  text-align: center;
+}
+
+@media (max-width: 360px) {
+  .seal__title {
+    font-size: 1.75rem;
+  }
+
+  .trust-seals {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .seal-wrapper {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .trust-seals {
+    padding: 6em 0;
+  }
+}
