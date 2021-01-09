@@ -1,6 +1,6 @@
 footer {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  background: var(--clr-dark);
+  color: var(--clr-light);
   text-align: center;
   padding: 2.5em 0;
   font-size: var(--fs-h3);
@@ -14,7 +14,7 @@ footer {
 .footer__link,
 .footer__name {
   font-weight: var(--fw-bold);
-  color: #000;
+  color: var(--clr-light);
 }
 
 .footer-import-app {
@@ -47,7 +47,7 @@ footer {
 
   &::before {
     content: '';
-    border-top: 1px solid var(--clr-dark);
+    border-top: 1px solid var(--clr-light);
     width: 250px;
     display: inline-block;
     margin-bottom: 2.5em;
